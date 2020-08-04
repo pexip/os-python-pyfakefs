@@ -1,0 +1,13 @@
+Description: Drop depends on (not used) flask_restx
+Author: Ondřej Nový <onovy@debian.org
+Forwarded: not-needed
+
+--- a/pyfakefs/tests/test_issue.py
++++ b/pyfakefs/tests/test_issue.py
+@@ -1,6 +1,5 @@
+ import contextlib
+ 
+-import flask_restx
+ 
+ 
+ @contextlib.contextmanager

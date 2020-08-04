@@ -1,0 +1,30 @@
+Source: python-pyfakefs
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders:
+ Ondřej Nový <onovy@debian.org>,
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-setuptools,
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/python-team/modules/python-pyfakefs
+Vcs-Git: https://salsa.debian.org/python-team/modules/python-pyfakefs.git
+Homepage: http://pyfakefs.org/
+Testsuite: autopkgtest-pkg-python
+Rules-Requires-Root: no
+
+Package: python3-pyfakefs
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: fake fs that mocks the Python file system modules - Python 3
+ pyfakefs implements a fake file system that mocks the Python file system
+ modules. Using pyfakefs, your tests operate on a fake file system in memory
+ without touching the real disk. The software under test requires no
+ modification to work with pyfakefs.
+ .
+ This package contains the Python 3.x module.
