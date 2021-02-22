@@ -1,11 +1,12 @@
 Source: python-pyfakefs
 Section: python
 Priority: optional
-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
-Uploaders:
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+XSBC-Pexip-Original-Uploaders:
  Ondřej Nový <onovy@debian.org>,
 Build-Depends:
- debhelper-compat (= 13),
+ debhelper-compat (= 12),
  dh-python,
  python3-all,
  python3-setuptools,
@@ -15,6 +16,7 @@ Vcs-Git: https://salsa.debian.org/python-team/modules/python-pyfakefs.git
 Homepage: http://pyfakefs.org/
 Testsuite: autopkgtest-pkg-python
 Rules-Requires-Root: no
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
 
 Package: python3-pyfakefs
 Architecture: all
